@@ -1,0 +1,146 @@
+.text-greyblue {
+    color: #879fb8;
+}
+
+.text-lightblue {
+    color: #3598FE;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #3598FE 0%, #BBDBF2 110%);
+}
+
+.gradient2 {
+    background: linear-gradient(90deg, #3598FE 0%, #BBDBF2 180%);
+}
+
+.parallax {
+    /* background-image: url(img/header3.jpg); */
+    background: linear-gradient(rgba(254, 254, 254, .9), rgba(254, 254, 254, .9)), url(img/header3.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.refri {
+    /* background-image: url(img/header3.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 150%), url(img/refrigeration.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resort {
+    /* background-image: url(img/header3.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 150%), url(img/resort.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.airplane {
+    /* background-image: url(img/header3.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 150%), url(img/airplane.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.building-sky {
+    /* background-image: url(img/header3.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.2) 50%, #184366 100%), url(img/header1.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scroll-offset-20 {
+    scroll-margin-top: 20px;
+}
+
+.scroll-offset-70 {
+    scroll-margin-top: 70px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.work-sans {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#menu-toggle:checked+#menu {
+    display: block;
+}
+
+.hover\:grow {
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.hover\:grow:hover {
+    transform: scale(1.02);
+}
+
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+    z-index: -1;
+}
+
+.carousel-open:checked+.carousel-item {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-open:checked+.carousel-item {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    /* Ensure the height matches your carousel items */
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #3598FE;
+    /*Set to match the Tailwind colour you want the active one to be */
+}
