@@ -24,6 +24,14 @@
     background-size: cover;
 }
 
+.demo {
+    /* background-image: url(img/header3.jpg); */
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
 .refri {
     /* background-image: url(img/header3.jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 150%), url(img/refrigeration.jpg);
