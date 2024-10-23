@@ -26,7 +26,7 @@
 
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
-    <div class="w-full container mx-auto flex items-center justify-between mt-0 py-2">
+    <div class="w-full container mx-auto flex flex-grid items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
           <img id="logoImage" class="" src="img/logo_claro.png" style="width: 30%; min-width: 64px; ">
@@ -137,7 +137,7 @@
   <!--About US-->
   <section id="aboutus" class="bg-white border-b py-8 scroll-offset-20">
     <div class="container max-w-5xl mx-auto m-8">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      <h2 class="w-full my-2 px-2 text-5xl font-bold leading-tight text-center text-gray-800">
         ¿Por qué elegirnos?
       </h2>
       <div class="w-full mb-4">
@@ -390,13 +390,13 @@
   <!--Demo-->
   <section id="demos" class="parallax py-8 scroll-offset-70">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-      <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      <h2 class="w-full my-2 px-2 text-5xl font-bold leading-tight text-center text-gray-800">
         Probá Nuestras Demos Gratis
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-35 my-0 py-0 rounded-t"></div>
       </div>
-      <h3 class="w-full mb-4 text-3xl leading-tight text-center text-gray-800">
+      <h3 class="w-full mb-4 px-2 text-3xl leading-tight text-center text-gray-800">
         ¡Clickeá en las siguientes demos y echá un vistazo a algunos ejemplos de como podría ser tu sistema!
       </h3>
       <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
@@ -609,7 +609,7 @@
       <h3 class="w-full mb-4 text-3xl leading-tight text-center text-gray-800">
         ¡Escribinos y un asesor te contactará a la brevedad! Descubrí como podemos ayudarte a potenciar tu negocio.
       </h3>
-      <form class="w-auto bg-gray-100 p-8 rounded shadow-md" action="#" method="POST">
+      <form class="w-auto bg-gray-100 p-8 mx-4 rounded shadow-md" action="#" method="POST">
         <div class="mb-4">
           <input type="text"
             class="text-gray-500 w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-lightblue-500"
@@ -688,26 +688,25 @@
 
   <!--Footer-->
   <footer class="bg-white">
-    <div class="container mx-auto px-8">
-      <div class="w-full flex flex-col md:flex-row pt-4">
-        <div class="flex-1 mb-4 text-black">
-          <a class="text-lightblue no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-            <!--Icon from: http://www.potlabicons.com/ -->
-            <img id="logoImage" class="" src="img/logo_gris.png" style="min-width: 64px; width: 40%;">
+    <div class="container flex mx-auto px-2">
+      <div class="w-full flex flex-col md:flex-row px-4" style="column-gap: 60px;">
+        <div class="text-black" style="width: 10%">
+            <a class="text-lightblue no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+          <img id="logoImage" class="" src="img/logo_gris.png" style="min-width: 64px; padding-top: 4px;">
           </a>
         </div>
-        <div class="flex-1">
-          <p class="flex text-xl" style="color:#858585">
+        <div class="flex-1 pt-1 pb-2">
+          <p class="flex-1 text-xl" style="color:#858585">
             <a href="#" class="w-auto flex hover:underline">
               <svg xmlns="http://www.w3.org/2000/svg" class="pt-1" width="24" height="24" viewBox="0 0 24 24"
                 style="fill: rgba(133, 133, 133, 1);transform: msFilter;">
                 <path
                   d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z">
                 </path>
-              </svg>info@skysys.com.ar</a>
+              </svg>comercial@skysys.com.ar</a>
           </p>
         </div>
-        <div class="flex-1">
+        <div class="flex-1 pt-1 pb-2">
           <p class="flex text-xl" style="color:#858585">
             <a href="#" class="w-auto flex hover:underline">
               <svg xmlns="http://www.w3.org/2000/svg" class="pt-1" width="24" height="24" viewBox="0 0 24 24"
@@ -718,7 +717,7 @@
               </svg>+54 11 2299 0122</a>
           </p>
         </div>
-        <div class="flex-1">
+        <div class="flex-1 pt-1 pb-2">
           <p class="flex text-xl" style="color:#858585">
             <a href="#" class="w-auto flex hover:underline">
               <svg xmlns="http://www.w3.org/2000/svg" class="pt-1" width="24" height="24" viewBox="0 0 24 24"
@@ -726,7 +725,7 @@
                 <path
                   d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
                 </path>
-              </svg>SkySYS</a>
+              </svg></a>
           </p>
         </div>
       </div>
